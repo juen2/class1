@@ -1,0 +1,164 @@
+<div id="container">
+    <div id="header">
+        <hi></hi>
+    </div>
+
+<div id="sidebar">
+    <h1></h1>
+</div>
+
+<div id="contents">
+    <h1></h1>
+</div>
+
+<div id="footer">
+    <h1></h1>
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>2단 레이아웃</title>
+ <style>
+  * { 
+   margin:0; /* 브라우저 기본 마진 리셋 */
+   padding:0; /* 브라우저 기본 패딩 리셋 */
+   box-sizing: border-box; /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+  }
+  #container {
+   width:1200px;  /* 내용 전체의 너비 */
+   margin:20px auto; /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+  }
+  #header{
+   width:100%; /* 부모 요소의 너비와 똑같게 */
+   height:120px; /* 헤더의 높이 */
+   background-color:#acacac;
+  }
+  #sidebar{
+   width:300px; /* 사이드바의 너비 */
+   height:600px; /* 사이드바의 높이 */
+   background-color:#e9e9e9;
+   float:left; /* 왼쪽으로 플로팅 */
+  }
+  #contents {
+   width:900px; /* 본문의 너비 */
+   height:600px; /* 본문의 높이 */
+   background-color:#f7f7f7;
+   float:left; /* 왼쪽으로 플로팅 */
+  }
+  #footer {
+   width:100%; /* 부모 요소의 너비와 똑같게 */
+   height:100px; /* 푸터의 높이 */
+   background-color:#888888;
+   clear:left; /* 플로팅 해제 */
+  }
+ </style>
+</head>
+<body>
+ <div id="container">
+  <header id="header">
+   <h1>웹사이트 제목</h1>
+  </header>
+  <aside id="sidebar">
+   <h2>왼쪽메뉴바</h2>    
+  </aside>
+  <section id="contents">
+   <h2>본문내용</h2>
+  </section>
+  <footer id="footer">
+   <h2>푸터</h2>
+  <footer>
+ </div>
+</body>
+</html>
+         <meta charset="UTF-8">
+         <title>2단 레이아웃</title>
+         <style>
+          * { 
+           margin:0; /* 브라우저 기본 마진 리셋 */
+           padding:0; /* 브라우저 기본 패딩 리셋 */
+           box-sizing: border-box; /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+          }
+          #container {
+           width:1200px;  /* 내용 전체의 너비 */
+           margin:20px auto; /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+          }
+          #header{
+           width:100%; /* 부모 요소의 너비와 똑같게 */
+           height:120px; /* 헤더의 높이 */
+           background-color:#acacac;
+          }
+          #sidebar{
+           width:300px; /* 사이드바의 너비 */
+           height:600px; /* 사이드바의 높이 */
+           background-color:#e9e9e9;
+           float:left; /* 왼쪽으로 플로팅 */
+          }
+          #contents {
+           width:900px; /* 본문의 너비 */
+           height:600px; /* 본문의 높이 */
+           background-color:#f7f7f7;
+           float:left; /* 왼쪽으로 플로팅 */
+          }
+          #footer {
+           width:100%; /* 부모 요소의 너비와 똑같게 */
+           height:100px; /* 푸터의 높이 */
+           background-color:#888888;
+           clear:left; /* 플로팅 해제 */
+          }
+         </style>
+        <meta charset="UTF-8">
+        <title>2단 레이아웃</title>
+        <style>
+         * { 
+          margin:0; /* 브라우저 기본 마진 리셋 */
+          padding:0; /* 브라우저 기본 패딩 리셋 */
+          box-sizing: border-box; /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+         }
+         #container {
+          width:1200px;  /* 내용 전체의 너비 */
+          margin:20px auto; /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+         }
+         #header{
+          width:100%; /* 부모 요소의 너비와 똑같게 */
+          height:120px; /* 헤더의 높이 */
+          background-color:#acacac;
+         }
+         #sidebar{
+          width:300px; /* 사이드바의 너비 */
+          height:600px; /* 사이드바의 높이 */
+          background-color:#e9e9e9;
+          float:right; /* 오른쪽으로 플로팅 */
+         }
+         #contents {
+          width:900px; /* 본문의 너비 */
+          height:600px; /* 본문의 높이 */
+          background-color:#f7f7f7;
+          float:right; /* 오른쪽으로 플로팅 */
+         }
+         #footer {
+          width:100%; /* 부모 요소의 너비와 똑같게 */
+          height:100px; /* 푸터의 높이 */
+          background-color:#888888;
+          clear:right; /* 플로팅 해제 */
+         }
+        </style>
+        </head>
+        <body>
+         <div id="container">
+          <header id="header">
+           <h1>웹사이트 제목</h1>
+          </header>
+          <aside id="sidebar">
+           <h2>왼쪽메뉴바</h2>    
+          </aside>
+          <section id="contents">
+           <h2>본문내용</h2>
+          </section>
+          <footer id="footer">
+           <h2>푸터</h2>
+          <footer>
+         </div>
+        </body>
+        </html>
