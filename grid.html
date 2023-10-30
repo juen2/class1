@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>그리드 레이아웃</title>
+  <style>
+    body {
+      padding-top: 20px;
+      background: #f5f7f8;
+    }
+
+    .container {
+      display: grid;
+      width: 100%;
+      max-width: 750px;
+      margin: 0 auto;
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+
+      grid-template-areas: "header   header   header"
+        "main        main     main  "
+        "footer      footer   footer";
+    }
+
+    .container div {
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .header {
+      background: #b03532;
+      grid-area: header;
+    }
+
+    .main {
+      background: #33a8a5;
+      grid-area: main;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 20px;
+    }
+
+    .bigimg {
+      background: #da6f2b;
+      grid-row :span 2;
+    }
+
+    .blogart {
+      background: #3d8bb1;
+    }
+
+    .footer {
+      background: #6a478f;
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="header">헤더영역</div>
+
+    <div class="main">
+      <div class="bigimg">이미지</div>
+      <div class="blogart">내용</div>
+      <div class="blogart">내용</div>
+      <div class="blogart">내용</div>
+      <div class="blogart">내용</div>
+    </div>
+
+    <div class="footer">푸터영역저작권표시</div>
+  </section>
+  </div>
+
+</body>
+
+</html>
