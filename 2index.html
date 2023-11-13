@@ -1,220 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            
-             * {
-                margin: 0px;
-                padding: 0px;
-                box-sizing: border-box;
-            }
-            ul,ol {
-                list-style: none;
-            }
-            a {
-                text-decoration: none;
-            }
-            
-            header {
-                width: 100%;
-                border-bottom: 1px solid #ddd;
-            }
-            header .inner {
-                width: 1180px;
-                height: 120px;
-                margin: 0px auto;
-                position: relative; /*자식 absolute 요소의 기준점 설정*/
-            }
-            header .inner h1 {
-                position: absolute;
-                left: 0px;
-                bottom: 15px;
-            }
-            header .inner h1 a {
-                font: bold 24px/1 "arial";
-                color: #444;
-            }
-            header .inner .util {
-                position: absolute;
-                top: 20px;
-                right: 30px;
-            }
-            header .inner .util li {
-                float: left;
-            }
-            header .inner .util li a {
-                display: block;
-                font: 12px/1 "arial";
-                color: #999;
-                padding: 0px 10px;
-            }
-            header .inner #gnb {
-                position: absolute;
-                bottom: 0px;
-                right: 0px;
-            }
-            header .inner #gnb li {
-                float: left;
-            }
-            header .inner #gnb li a {
-                display: block; /*인라인 요소는 block설정하여 크기를 조절가능*/
-                font: bold 15px/1 "arial";
-                color: #555;
-                padding: 20px 40px;
-                transition: all 0.5s;
-            }
-            header .inner #gnb li a:hover {
-                background: #555;
-                color: #fff;
-            }
-            figure {figure .inner {
-	width: 1180px;
-	margin: 0px auto;
-	position: relative;
-}
-figure .inner h1 {
-	font: normal 120px/1 "arial";
-	color: #fff;
-	margin-bottom: 20px;
-}
-figure .inner p {
-	font: 16px/1.4 "arial";
-	color: #888;
-	margin-bottom: 60px;
-}
-figure .inner a {
-	display: block;
-	width: 400px;
-	height: 30px;
-	border: 1px solid #bbb;
-	font: bold 11px/30px "arial";
-	color: #fff;
-	text-align: center;
-	letter-spacing: 1px;
-	transition: all 0.5s;
-}
-figure .inner a:hover {
-	background: #fff;
-	color: #555;
-}
-	width: 100%;
-	height: calc(100vh - 120px); /*전체 브라우저 높이에서 120px만큼 빼줌*/
-	background: #000;
-	position: relative;
-	overflow: hidden;
-	padding-top: 250px;
-}
-figure video {
-	object-fit: cover; /*영상을 figure안쪽에 꽉 차도록 설정*/
-	width: 100%;
-	height: 100%;
-	opacity: 0.3;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-        </style>
-    </head>
-  <body>
-    <section.inner {
-	width: 1180px;
-	margin: 0px auto;
-}
-section .inner h1 {
-	font: bold 24px/1 "arial";
-	color: #555;
-	text-align: center;
-	margin-bottom: 50px;
-}
-section .inner .wrap {
-	width: 100%;
-}
-section .inner .wrap::after {
-	/*자식 요소인 article의 float해제*/
-	content: "";
-	display: block;
-	clear: both;
-}
-section .inner .wrap article {
-	width: 280px;
-	float: left;
-	margin-right: 20px;
-}
-section .inner .wrap article:last-child {
-	/*제일 오른쪽 마지막 요소만 여백제거*/
-	margin-right: 0px;
-}
-section .inner .wrap article h2 {
-	margin-bottom: 10px;
-}
-section .inner .wrap article h2 a {
-	font: bold 16px/1 "arial";
-	color: #555;
-}
-section .inner .wrap article p {
-	font: 14px/1.4 "arial";
-	color: #777;
-}
-section .inner .wrap article .pic {
-	width: 100%;
-	height: 200px;
-	background: #333;
-	margin-bottom: 15px;
-	position: relative;
-	overflow: hidden;
-}
-section .inner .wrap article .pic img {
-	object-fit: cover; /*pic프레임안에 이미지 꽉 채움*/
-	width: 100%;
-	height: 100%;
-}>
-    </figure>
-    </article>
-</section>
-         <div class="inner">
-                        <h1>공지사항</h1>
-                        <div class="wrap">
-                            <article>
-                                <div class="pic">
-                                    <img src="img/news1.png" alt="1번째 콘텐츠 이미지">
-                                </div>
-                                <h2><a href="http://m.bomnal.net/bomnal/5456" target="_blank">2024 한강미디어고 신입생 모집</a></h2>
-                                <p>2024 신입생 모집 학교 안내 브로슈어</p>
-                            </article>
-        </div>
-        </div>
-         <header>
-                    <div class="inner">
-                        <h1><a href="#">한강미디어고</a></h1>
-        
-                        <ul id="gnb">
-                            <li><a href="#">학교소개</a></li>
-                            <li><a href="#">방송미디어과</a></li>
-                            <li><a href="#">산업디자인과</a></li>
-                            <li><a href="#">사진영상과</a></li>
-                            <li><a href="#">웹미디어콘텐츠과</a></li>
-                        </ul>
-    
-                        <ul class="util">
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Join</a></li>
-                            <li><a href="#">Sitemap</a></li>
-                        </ul>
-                    </div>
-                </header>
 
-            <figure>
-                <video src="img/visual1.mp4" autoplay muted loop></video>
-               <div class="inner"></div>
-             <h1><a href="8">한강미디어고등학교</a></h1>
+<HEAD>
 
-             <ul id="gad"></ul>
-             
-                <P>한강미디어고 홈페이지를 방문해주셔서 감사합니다.
-                    한강미디어고는 방송미디어과,산업디자인과,사진영상과,웹미디어콘텐츠과를 포함하고 있습니다.
-                </P>
-            </figure>
-  </body>
+</HEAD>
+
+<body>
+    <script>
+        var userNumber = prompt("숫자를입력하세요.")
+        if (userNumber !== null) {
+            if (userNumber % 3 === 0) {
+                alert("3의 배수입니다.");
+            }
+            else {
+                alert("3의 배수가 아닙니다.");
+            }
+        }
+        else {
+            alert("같은 값을 입력했습니다.");
+        }
+    </script>
+</body>
+
 </html>
