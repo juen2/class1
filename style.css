@@ -1,0 +1,101 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .calendar {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .calendar-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .calendar-body {
+    padding: 10px;
+  }
+  
+  .days-of-week {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .days-of-week div {
+    width: calc(100% / 7);
+    text-align: center;
+  }
+  
+  .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .dates div {
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+  }
+ .table{
+  width: 20px;
+  height: 20px;
+ }
+ .table-content  {
+  max-width: 30px;
+  max-height: 30px;
+ }
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+
+  
+  /* 반응형 스타일 */
+  @media screen and (max-width: 600px) {
+    .calendar {
+      width: 90%;
+    }
+  }
+  

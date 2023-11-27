@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  <style>
+  #container {
+    width:500px:
+    margin:10px auto:
+    padding:10px:
+    border:1px solid #000:
+  }
+</style>
+  .header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .schedule-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .item {
+    text-align: center;
+  }
+  
+  .item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .item p {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
